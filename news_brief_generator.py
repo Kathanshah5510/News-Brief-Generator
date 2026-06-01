@@ -9,6 +9,7 @@ def bullet_point_summary(client, text, num_points=5):
     prompt = (
         f"Summarize the following text in "
         f"{num_points} concise bullet points:\n\n{text}"
+        f"Return only the bullet points and no introduction:\n\n{text}"
     )
 
     response = client.chat.completions.create(
@@ -38,6 +39,7 @@ def abstract_style_summary(client, text, sentence_count=5):
     prompt = (
         f"Summarize the following text as a "
         f"{sentence_count}-sentence abstract:\n\n{text}"
+        f"Return only the abstract and no introduction:\n\n{text}"
     )
 
     response = client.chat.completions.create(
@@ -67,6 +69,7 @@ def simple_english_summary(client, text, sentence_count=5):
     prompt = (
         f"Summarize the following text in simple English suitable "
         f"for a 12-year-old, in {sentence_count} sentences:\n\n{text}"
+        f"Return only the summary and no introduction:\n\n{text}"
     )
 
     response = client.chat.completions.create(

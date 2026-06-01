@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+
+.env
+*.env
+key.env
+groq_api_key.txt
+
+.vscode/
+.idea/

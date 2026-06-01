@@ -47,7 +47,7 @@ News-Brief-Generator/
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/News-Brief-Generator.git
+git clone https://github.com/Kathanshah5510/News-Brief-Generator.git
 ```
 
 Move into the project folder:
